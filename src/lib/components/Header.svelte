@@ -48,8 +48,8 @@
             <p class="ml-2 hidden sm:inline">iBook</p>
         </a>
         <a class="btn btn-xs" on:click={changeTheme}>
-            <span class="hidden sm:inline">Добавить книгу</span>
-            <img src="/img/svg/plus.svg" class="w-4"/>
+            <span class="hidden sm:inline">Сменить тему</span>
+            <img src="/img/svg/paint-bucket.svg" class="w-4"/>
         </a>
     </div>
 {#if showAuth}
@@ -68,13 +68,13 @@
                         <img src="/img/svg/plus.svg" class="w-4"/>
                     </a>
                     {/if}
-                    <a class="btn btn-secondary btn-xs" href={`/user/${$user.currentUser.data.id}/favs`}>
+                    <a class="btn btn-accent btn-xs" href={`/user/${$user.currentUser.data.id}/favs`}>
                         <span class="hidden sm:inline">Избранное</span>
-                        <img src="/img/svg/profile.svg" class="w-4"/>
+                        <img src="/img/svg/star.svg" class="w-4"/>
                     </a>
                     <a class="btn btn-secondary btn-xs" href={`/user/${$user.currentUser.data.id}/purchases`}>
                         <span class="hidden sm:inline">Покупки</span>
-                        <img src="/img/svg/profile.svg" class="w-4"/>
+                        <img src="/img/svg/book-check-trans.svg" class="w-4"/>
                     </a>
                     <a class="btn btn-primary btn-xs" href="/cart">
                         <span class="hidden sm:inline">Корзина</span>
@@ -87,9 +87,9 @@
                         <span class="hidden sm:inline">Профиль</span>
                         <img src="/img/svg/profile.svg" class="w-4"/>
                     </a>
-                    <a class="btn btn-xs" on:click={logout}>
-                        <span class="hidden btn-square sm:inline">Выйти</span>
-                        <img src="/img/svg/profile.svg" class="w-4"/>
+                    <a class="btn btn-xs btn-error" on:click={logout}>
+                        <span class="hidden sm:inline">Выйти</span>
+                        <img src="/img/svg/leave-icon.svg" class="w-4"/>
                     </a>
                 </nav>
             </div>
