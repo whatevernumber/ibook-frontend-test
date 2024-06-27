@@ -66,7 +66,7 @@
 
 <div class="flex justify-center gap-x-16 mb-6">
     {#if booksData.genres.data}
-        <div class="self-start bg-base-200 rounded p-3">
+        <div class="self-start bg-base-200 rounded p-3 hidden sm:block">
             <h2 class="text-md font-bold mb-2">Фильтр по жанрам</h2>
             <p class="text-sm text-accent hover:text-orange-600 cursor-pointer" on:click={() => search(null, 'genre')}>Сбросить</p>
             <ul class="flex flex-col flex-wrap gap-x-2">
@@ -78,14 +78,14 @@
             </ul>
         </div>
     {/if}
-    <div class="flex flex-col w-[700px]">
+    <div class="flex flex-col w-[300px] sm:w-[700px]">
         <div class="self-center mb-4">
             <Search genre={selectedGenre} bind:books bind:text />
         </div>
         {#if books.length}
         <ul class="flex flex-col flex-wrap gap-y-10 min-h-[600px]">
             {#each books as book, index (book.isbn)}
-            <li class="card card-bordered bg-base-200 shadow-xl w-[700px] relative">
+            <li class="card card-bordered bg-base-200 shadow-xl w-[300px] sm:w-[700px] relative">
                 <BookCard {book} />
                 {#if $user.currentUser}
                 <div class="absolute right-40 bottom-10">

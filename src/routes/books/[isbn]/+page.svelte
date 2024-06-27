@@ -21,10 +21,10 @@
 
 </script>
 
-<div class="flex m-auto w-[800px] bg-accent-content/10">
+<div class="flex m-auto flex-col w-[300px] sm:w-[800px] sm:flex-row bg-accent-content/10">
     <BookCard {book} pageType="main" />
     {#if $user.currentUser}
-        <div class="flex items-center flex-col p-2">
+        <div class="flex items-center justify-between sm:flex-col p-2">
             <div class="">
                 <BookCardButtons isbn={book.isbn} singleBook={book} />
             </div>

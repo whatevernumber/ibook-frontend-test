@@ -46,7 +46,7 @@
 
 <Header />
 
-<main>
+<main class="mb-4">
 	<slot />
 </main>
 

@@ -119,7 +119,7 @@
 
 </script>
 
-<div class="p-4 flex m-auto justify-center w-[500px]">
+<div class="p-4 flex m-auto justify-center w-[300px] sm:w-[500px]">
     <form name="book" class="flex flex-col w-full gap-y-4">
         <label>
             <span>Название</span>

@@ -93,7 +93,7 @@
     {#if purchased}
         <div class="flex gap-x-1 items-center">
             <img src="/img/svg/purchased.svg" class="w-6" alt="Иконка пакета">
-            <span class="text-sm">Куплено</span>
+            <span class="text-xs sm:text-sm">Куплено</span>
         </div>
     {:else}
         {#if saved}

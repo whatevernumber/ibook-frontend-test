@@ -37,6 +37,6 @@
 <search>
     <form>
         <input type="search" id="movie" placeholder="Найти книгу" bind:value={text} class="input input-bordered input-warning mr-1" />
-        <button class="btn btn-primary" on:click={search} type="submit">Найти</button>
+        <button class="btn btn-primary btn-square sm:btn-md" on:click={search} type="submit">Найти</button>
     </form>
 </search>
