@@ -9,6 +9,21 @@
 	export let data: object;
 
 	onMount(async () => {
+		let savedTheme = localStorage.getItem('theme');
+		let theme: string = document.documentElement.getAttribute('data-theme');
+
+		if (savedTheme !== theme) {
+			let newTheme: string = '';
+
+			if (theme === 'fantasy') {
+				newTheme = 'nord';
+			} else {
+				newTheme = 'fantasy';
+			}
+
+			document.documentElement.setAttribute('data-theme', newTheme);
+		}
+
 		if (data.authorized) {
 			const userId: string = data.id;
 

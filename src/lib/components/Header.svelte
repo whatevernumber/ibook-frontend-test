@@ -9,7 +9,7 @@
     let showAuth: boolean = false;
     $: loggedIn = $user.currentUser ? true : false;
 
-    setTimeout(() => showAuth = true, 1000);
+    setTimeout(() => showAuth = true, 1500);
 
     const logout = async (): Promise<void> => {
         const response: Response = await fetch('/api/logout', {
@@ -36,6 +36,7 @@
             newTheme = 'fantasy';
         }
         document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
     }
 
 </script>
