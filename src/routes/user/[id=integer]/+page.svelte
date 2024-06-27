@@ -15,7 +15,7 @@
 
 </script>
 
-<div class="flex justify-between shadow-xl bg-base-200 w-[300px] sm:w-[500px] m-auto min-h-32 p-8">
+<div class="flex justify-between flex-col gap-y-4 sm:flex-row shadow-xl bg-base-200 w-[300px] sm:w-[500px] m-auto min-h-32 p-8">
     <div>
         <p class="text-sm font-bold"> Имя пользователя:</p>
         <p>{currentUser.name}</p>
