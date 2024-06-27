@@ -12,7 +12,7 @@
 		let savedTheme = localStorage.getItem('theme');
 		let theme: string = document.documentElement.getAttribute('data-theme');
 
-		if (savedTheme !== theme) {
+		if (savedTheme && savedTheme !== theme) {
 			let newTheme: string = '';
 
 			if (theme === 'fantasy') {
