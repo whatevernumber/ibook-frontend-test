@@ -65,7 +65,7 @@
 </script>
 
 <div class="flex justify-center gap-x-16 mb-6">
-    {#if booksData.genres.data}
+    {#if booksData.genres.data.length}
         <div class="self-start bg-base-200 rounded p-3 hidden sm:block">
             <h2 class="text-md font-bold mb-2">Фильтр по жанрам</h2>
             <p class="text-sm text-accent hover:text-orange-600 cursor-pointer" on:click={() => search(null, 'genre')}>Сбросить</p>

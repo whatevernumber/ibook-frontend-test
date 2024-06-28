@@ -80,7 +80,7 @@
                         <span class="hidden sm:inline">Корзина</span>
                         <img src="/img/svg/cart-shopping.svg" class="w-4">
                         {#if $user.cart.data.length}
-                        <span>{$user.cart.data.length}</span>
+                        <span class="hidden sm:inline">{$user.cart.data.length}</span>
                         {/if}
                     </a>
                     <a class="btn btn-xs" href={`/user/${$user.currentUser.data.id}`}>
