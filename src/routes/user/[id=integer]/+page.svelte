@@ -19,8 +19,10 @@
     <div>
         <p class="text-sm font-bold"> Имя пользователя:</p>
         <p>{currentUser.name}</p>
+        {#if $user.currentUser && $user.currentUser.data.id === currentUser.id}
         <p class="text-sm font-bold"> Почтовый ящик:</p>
         <p>{currentUser.email}</p>
+        {/if}
         <p class="text-sm font-bold"> Дата рождения:</p>
         <p>{currentUser.birthday}</p>
         {#if age}

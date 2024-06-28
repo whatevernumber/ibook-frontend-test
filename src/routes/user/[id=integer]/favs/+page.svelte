@@ -17,7 +17,7 @@
                 <li class="card card-bordered bg-base-200 shadow-xl w-[300px] sm:w-[700px] m-auto">
                     <BookCard {book} />
                     <div class="absolute right-40 bottom-10">
-                        <BookCardButtons isbn={book.isbn} bookIndex={index} singleBook={book} />
+                        <BookCardButtons isbn={book.isbn} bookIndex={index} singleBook={book} bind:books type="fav" />
                     </div>
                 </li>
             {/each}
