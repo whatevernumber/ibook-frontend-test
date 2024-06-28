@@ -65,7 +65,7 @@
                     {#if $user.currentUser && $user.currentUser.data.admin}
                     <a href="/admin/books/add" class="btn btn-xs">
                         <span class="hidden sm:inline">Добавить книгу</span>
-                        <img src="/img/svg/plus.svg" class="w-4"/>
+                        <img src="/img/svg/book-add.svg" class="w-4"/>
                     </a>
                     {/if}
                     <a class="btn btn-accent btn-xs" href={`/user/${$user.currentUser.data.id}/favs`}>
